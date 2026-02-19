@@ -2,7 +2,7 @@
 import streamlit as st
 import requests
 smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-st.text(smoothiefroot_response)
+st.text(smoothiefroot_response.json())
 ## no longer needit in git from snowflake.snowpark.context import get_active_session
 #from snowflake.snowpark.functions import col
 
